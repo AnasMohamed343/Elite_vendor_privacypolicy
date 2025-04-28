@@ -5,46 +5,47 @@ We take your privacy seriously. This Privacy Policy explains how we handle infor
 Information We Collect
 
 Admin Account Information
-Pre-registered admins must log in using credentials provided by the system.
+Pre-registered admins must log in using credentials provided by the system (email + password) stored and authenticated via our secure API server.
 
-Email and password are stored securely via database.
+Session tokens may be cached locally for persistent login .
 
 Camera access (QR scans).
 
 Profile Pictures (if uploaded by admins).
 
 QR Scan Data (Temporary Processing)
-When scanning a user’s Elite Membership card QR code, the app validates:
+When scanning a user’s Elite Membership card QR code, the app sends the QR data to our API to validate, then return the following information as card details:
 
-Cardholder’s name, photo, and validity status.
+Cardholder’s name, photo, address, phone, job, validity status, and expiration dates.
 
-Expiration dates and membership details.
+This data is never stored on the device or app—it is processed in real-time and discarded after validation.
 
-This data is not stored in the app or on the device—it is processed in real-time via API calls and discarded after validation.
+Device & Technical Information
+IP address, timestamp, and device type (for security logging and API troubleshooting).
 
 Device Information (Automatically Collected)
 IP address and timestamp for API request logging (anonymous, for security and debugging).
 
-Device type and OS version (for technical support).
-
 How We Use Your Information
-To authenticate admin logins securely.
+Authenticate admins via our API server.
 
-To validate Elite Membership cards in real-time.
+Validate Elite Membership cards in real-time.
 
-To improve app performance.
+Improve app performance (anonymous error logs).
 
 Data Storage & Security
-Admin credentials: Securely stored via database.
+Admin credentials: Stored only on our encrypted API server—never locally.
+
+Session tokens: Stored locally for persistent login .
 
 QR scan data: Never saved locally only transient API validation.
 
 Profile pictures (if uploaded by admins): Stored on the api server (optional).
 
 Third-Party Services
-Firebase Authentication: Used for admin login security.
+Our API server: Handles all authentication and card validation.
 
-API Servers: Communicate with Elite Membership’s backend to validate cards.
+No third-party logins (Google/Facebook) or advertising networks are used.
 
 We do not share data with advertisers or other third parties.
 
