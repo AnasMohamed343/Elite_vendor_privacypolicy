@@ -1,0 +1,61 @@
+Privacy Policy
+
+We take your privacy seriously. This Privacy Policy explains how we handle information in the Elite Membership Vendor app, which is used by authorized administrators to validate user discount cards via QR scans.
+
+Information We Collect
+
+Admin Account Information
+Pre-registered admins must log in using credentials provided by the system.
+
+Email and password are stored securely via database.
+
+Camera access (QR scans).
+
+Profile Pictures (if uploaded by admins).
+
+QR Scan Data (Temporary Processing)
+When scanning a user’s Elite Membership card QR code, the app validates:
+
+Cardholder’s name, photo, and validity status.
+
+Expiration dates and membership details.
+
+This data is not stored in the app or on the device—it is processed in real-time via API calls and discarded after validation.
+
+Device Information (Automatically Collected)
+IP address and timestamp for API request logging (anonymous, for security and debugging).
+
+Device type and OS version (for technical support).
+
+How We Use Your Information
+To authenticate admin logins securely.
+
+To validate Elite Membership cards in real-time.
+
+To improve app performance.
+
+Data Storage & Security
+Admin credentials: Securely stored via database.
+
+QR scan data: Never saved locally only transient API validation.
+
+Profile pictures (if uploaded by admins): Stored on the api server (optional).
+
+Third-Party Services
+Firebase Authentication: Used for admin login security.
+
+API Servers: Communicate with Elite Membership’s backend to validate cards.
+
+We do not share data with advertisers or other third parties.
+
+Data Safety
+All API calls use HTTPS encryption.
+
+Admin accounts are pre-approved; no public signups.
+
+Changes to This Privacy Policy
+This policy is effective as of April 28, 2025. Updates will be posted in-app or emailed to admins.
+
+Contact Information
+For questions about this policy or data practices, contact:
+Email: info@elitessg.com
